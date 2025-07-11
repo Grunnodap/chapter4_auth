@@ -1,0 +1,75 @@
+// 🎨 변수 정의
+$primary-color: #d7fa00;
+$text-muted: rgb(160, 160, 160);
+$black: black;
+$font-small: 12px;
+$font-regular: 13px;
+$font-large: 18px;
+$img-width: 300px;
+$gap-default: 20px;
+$padding-section: 20px 40px;
+
+// 📦 header 스타일
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $black;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap-default;
+  }
+}
+
+// 📄 리스트 기본 스타일
+ul {
+  li {
+    list-style: none;
+    font-weight: 400;
+    font-size: $font-regular;
+  }
+}
+
+// 📚 섹션 레이아웃
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-default;
+  padding: $padding-section;
+}
+
+// 📄 콘텐츠 박스
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+
+  img {
+    width: $img-width;
+    border-radius: 10px;
+    margin-bottom: 3px;
+  }
+
+  span {
+    font-size: $font-small;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 4px 5px;
+    border-radius: 3px;
+  }
+
+  div {
+    font-size: $font-large;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: $font-small;
+    color: $text-muted;
+  }
+}
